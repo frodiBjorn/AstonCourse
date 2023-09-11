@@ -46,7 +46,8 @@ QUIC - **решает проблемы обоих протоколов:**
 
 - Сокращает время на установку соединения
 - Берёт от UDP высокую скорость передачи, но при этом контролирует целостность пакетов.
-- Может передавать несколько пакетов параллельно, что тоже ускоряет их доставку.
+- Мультиплексирование - может передавать несколько пакетов параллельно, что тоже ускоряет их доставку.
+- Шифрование по умолчанию.
 
 ---
 
@@ -99,10 +100,29 @@ setTimeout(() => {
     ```js
     let message = "Hello"
     ```
-  - Использование обратных кавычек: 
+- Использование одинарных кавычек: 
+    ```js
+    let message2 = 'World'
+    ```
+- Использование обратных кавычек: 
     ```js
     let phrase = `${message} World`
     ```
+- Конструктор String:
+    ```js
+    let str = new String("JavaScript")
+    ```
+- Метод toString():
+    ```js
+    let myNumber = 10
+    let myString = myNumber.toString()
+    ```
+- Метод String():
+    ```js
+    let myNumber2 = 20
+    let myString2 = String(myNumber2)
+    ```
+
  **Number**
  - Использование целых чисел: 
     ```js
@@ -112,14 +132,41 @@ setTimeout(() => {
     ```js
     let float = 9.99
     ```
+  - Использование чисел в экспоненциальной форме: 
+    ```js
+    let expNumber = 2.e3 //2000
+    ```
+  - Конструктор Number: 
+    ```js
+    let num = new Number(42)
+    ```
+  - Преобразование строк в число: 
+    ```js
+    let num2 = parseInt("10")
+    let num3 = parseFloat("3.14")
+    let num4 = +'999'
+    ```
+  - Метод Number: 
+    ```js
+    let num5 = Number('5')
+    ```
  **Boolean**
- - Использование true или false: 
+ - Явное присвоение true или false: 
     ```js
     let isReady = true
     ```
   - Использование результата сравнений: 
     ```js
     let isGreater = 4 > 1
+    ```
+  - Двойное отрицание:
+    ```js
+    let isBoolean = !!6
+    ```
+  - Преобразование с помощью функции Boolean():
+    ```js
+    let falseBoolean = Boolean(''); // false
+    let trueBoolean = Boolean(10); // true
     ```
  **Null**
  - Использование присвоения значения: 
@@ -136,6 +183,10 @@ setTimeout(() => {
     ```js
     let age
     ```
+ - Использование присвоения значения: 
+    ```js
+    let undefinedValue = undefined
+    ```
   - Использование неопределенного результата выполнения функции: 
     ```js
     function myFunction() {}
@@ -149,6 +200,10 @@ setTimeout(() => {
   - Создание символа с описанием: 
     ```js
     let id = Symbol("id")
+    ```
+  - Использование глобальных символов:
+    ```js
+    let symbol = Symbol.for("Name");
     ```
  **BigInt**
  - Добавление n в конец числового литерала: 

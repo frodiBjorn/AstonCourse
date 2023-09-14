@@ -65,3 +65,6 @@
 // const incrementByOne = makeCounter(1);
 // console.log(incrementByOne()); // Выведет 1
 // console.log(incrementByOne()); // Выведет 2
+
+// 13. Асинхронная функция:
+// async function makeCounter() {};

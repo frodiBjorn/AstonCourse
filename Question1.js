@@ -85,3 +85,11 @@
 // };
 // const counter = Object.create(counterPrototype);
 // counter.count = 0;
+
+// 10. Создание объекта с помощью JSON.parse()
+// const counter = JSON.parse("{}");
+
+// 11. Создание объекта с помощью Object.fromEntries()
+// const array = [[0,1], [1,2]]
+// const counter = Object.fromEntries(array)
+

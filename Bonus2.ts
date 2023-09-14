@@ -1,4 +1,4 @@
-function reverseStr(str) {
+function reverseStr(str:string): string {
   return str.split("").reverse().join("");
 }
 

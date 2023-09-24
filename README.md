@@ -40,3 +40,5 @@ const data = await users;
 
 console.log(data);
 ```
+---
+## Bonus - in Bonus.js
